@@ -9,34 +9,32 @@ namespace Prob2
     class BoxClass
     {
         // fields
-        public string BoxPublicColor;
-        private int BoxPrivateHeight;
-        protected int BoxProtectedWidth;
+        private int boxPrivateIntHeight;
+        protected int boxProtectedIntWidth;
 
         // constructors
-        public BoxClass (int Height, int Width, string Color) 
-        {
-            height = Height;
-        }
+        public BoxClass() { }
 
-        public BoxClass (int ProtectedString, int PrivateInt)
+        public BoxClass(int privateIntHeight, int protectedIntWidth)
         {
-            this.BoxPrivateHeight = PrivateInt;
-            this.BoxProtectedWidth = ProtectedString;
+            this.boxPrivateIntHeight = privateIntHeight;
+            this.boxProtectedIntWidth = protectedIntWidth;
         }
 
         // methods 
 
         public void BoxMethod()
         {
-            Console.WriteLine("BoxClass.BoxMethod");
+            Console.WriteLine("Base.Class.BaseMethod");
         }
 
         public virtual void PrintState()
         {
-            Console.WriteLine("The Box Object");
-            Console.WriteLine("\t PrivateString:{0}", BoxProtectedWidth);
-            Console.WriteLine("\t PrivateInt:{0}", BoxPrivateHeight);
+            Console.WriteLine("BoxClass Object");
+            Console.WriteLine("\tboxPrivateIntHeight:{0} inches", boxPrivateIntHeight);
+            Console.WriteLine("\tboxProtectedIntWidth:{0} inches", boxProtectedIntWidth);
         }
+
+
     }
 }

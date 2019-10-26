@@ -8,18 +8,18 @@ namespace Prob2
 {
     class RedBox : BoxClass
     {
-        protected int RedBoxProtectedInt;
+        // Fields       
+        protected int redProtectedInt;
 
-        // Constructors 
+        // Constructors
 
         public RedBox() { }
 
-        public RedBox (int BoxPrivateInt, int BoxProtectedInt, int RedBoxProtectedInt)
+        public RedBox(int boxPrivateIntHeight, int boxProtectedIntWidth, int redProtectedInt)
+            : base(boxPrivateIntHeight, boxProtectedIntWidth)
         {
-            this.RedBoxProtectedInt = RedBoxProtectedInt;
+            this.redProtectedInt = redProtectedInt;
         }
-
-        // methods 
 
         public void RedBoxMethod()
         {
@@ -28,10 +28,12 @@ namespace Prob2
 
         public override void PrintState()
         {
-            Console.WriteLine("RedBox");
-            Console.WriteLine("\tRedBoxProtectedInt: {0}", RedBoxProtectedInt);
+            Console.WriteLine("RedBox Object");
+            Console.WriteLine("\tredProtectedInt: {0}", redProtectedInt);
             base.PrintState();
         }
+
+
 
 
     }

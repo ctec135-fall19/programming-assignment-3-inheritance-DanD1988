@@ -25,34 +25,39 @@ namespace Prob2
     {
         static void Main(string[] args)
         {
+            // Test Method Inheritence 
+
             RedBox rb = new RedBox();
             BlueBox bb = new BlueBox();
-            GreenBox gb = new GreenBox();
 
-            Console.WriteLine("calling Methods from GreenBox");
-            
-            
-            gb.BoxMethod();
-            gb.RedBoxMethod();
-            // gb.BlueBoxMethod();
+            Console.WriteLine("Calling Methods from BlueBox");
+            bb.BoxMethod();
+            bb.RedBoxMethod();
+            bb.BlueBoxMethod();
             Console.WriteLine();
 
-            Console.WriteLine("Calling Methods from RedBox class");
-
+            Console.WriteLine("Calling Methods from RedBox");
             rb.BoxMethod();
             rb.RedBoxMethod();
             Console.WriteLine();
 
-            // test BoxClass fields
-
-            BoxClass bc = new BoxClass(888, 445);
+            // test BoxClass fields 
+            BoxClass bc = new BoxClass(316, 720);
             bc.PrintState();
+
+            // test RedBox print state
+            RedBox rb2 = new RedBox(1080, 940, 420);
+            rb2.PrintState();
+            Console.ReadLine();
 
             // test RedBox fields 
 
             //RedBox rb2 = new RedBox(123, 456, 434);
             //rb2.PrintState();
-           // Console.ReadLine();
+            // Console.ReadLine();
+
         }
     }
 }
+           
+        

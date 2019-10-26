@@ -8,9 +8,20 @@ namespace Prob2
 {
     class GreenBox : RedBox
     {
-        public void GreenBoxMethod()
+        private string color;
+
+        // use this to assign a different color to GreenBox
+        // This box is now Yellow
+        public string Color
         {
-            Console.WriteLine("GreenBoxClass.GreenBoxMethod");
+            get { return color; }
+            set
+            {
+
+            }
         }
     }
+
+
+
 }
