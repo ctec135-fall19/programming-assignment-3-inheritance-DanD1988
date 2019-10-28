@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GreenBox.cs" />
-    <Compile Include="staff.cs" />
     <Compile Include="BlueBox.cs" />
     <Compile Include="RedBox.cs" />
     <Compile Include="BoxClass.cs" />

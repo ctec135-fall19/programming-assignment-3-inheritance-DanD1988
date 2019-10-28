@@ -17,22 +17,27 @@ namespace Prob3
         public AggClass(string inStr)
         {
             //Composition
-            // MyClass own str. str does'nt exist outside of MyClass
-            str = "This string is showing composition. Only exist from within the class.";
+            // MyClass own str. str does'nt exist outside of AggClass
+            Console.WriteLine("Composition");
+            Console.WriteLine();
+            str = "This string is showing composition.\n";
+            Console.WriteLine("Composition only exists within the class.\n");
 
             // another class part of AggClass
 
             // Aggragation 
             // str2 refers to object outside of AggClass
+            
             str2 = inStr;
 
         }
 
+        // creates the print statement for show aggregation and composition 
         public void printState()
         {
             Console.WriteLine("str: {0}", str);
             Console.WriteLine("str2: {0}", str2);
         }
-
+       
     }
 }

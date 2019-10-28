@@ -17,9 +17,11 @@ namespace Prob2
             get { return color; }
             set
             {
-
+                color = value;
             }
         }
+
+        
     }
 
 

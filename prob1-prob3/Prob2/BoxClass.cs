@@ -15,6 +15,8 @@ namespace Prob2
         // constructors
         public BoxClass() { }
 
+        
+
         public BoxClass(int privateIntHeight, int protectedIntWidth)
         {
             this.boxPrivateIntHeight = privateIntHeight;
@@ -31,8 +33,8 @@ namespace Prob2
         public virtual void PrintState()
         {
             Console.WriteLine("BoxClass Object");
-            Console.WriteLine("\tboxPrivateIntHeight:{0} inches", boxPrivateIntHeight);
-            Console.WriteLine("\tboxProtectedIntWidth:{0} inches", boxProtectedIntWidth);
+            Console.WriteLine("\nboxPrivateIntHeight:{0} inches", boxPrivateIntHeight);
+            Console.WriteLine("\nboxProtectedIntWidth:{0} inches", boxProtectedIntWidth);
         }
 
 
